@@ -61,6 +61,16 @@ a
     color: #ff7a00;
 }
 
+.clear
+{
+    clear: both;
+}
+
+small
+{
+    font-size: 13px;
+    font-style: italic;
+}
 /* HEADER*/
 
 header
@@ -166,6 +176,7 @@ header nav ul li a
 #step-2
 {
    background: url(images/41a92b9f-293d-49bb-9e26-c180f5839c80.png) no-repeat top center; 
+    
 }
 
 #step-3
@@ -173,18 +184,66 @@ header nav ul li a
    background: url(images/ce4f30aa-20a1-4639-af42-0cbeecc6224d.png) no-repeat top center; 
 }
 
+/* POSSIBILITIES*/
 
+#possibilities
+{
+    background-color: #efefef;
+    padding: 60px 0px;
+}
 
+#possibilities article
+{
+    float: left;
+    width: 440px ;
+    height: 270px;
+    border-radius: 10px;
+}
 
+#possibilities article:first-child
+{
+    margin-right: 20px;
+}
 
+.overlay
+{
+    background: rgba(255,255,255,0.95);
+    width: 180px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;    
+    text-align: center;
+    box-sizing: border-box;
+}
 
+article h4
+{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
+#possibilities p
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.button-2
+{
+    color: #fff;
+    background: #ff7a00;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
 
-
-
-
-
+.button-2:hover
+{
+    color: #fff;
+    background: #02b8dd;
+}
 
 
 
