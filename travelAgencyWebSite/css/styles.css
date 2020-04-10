@@ -114,7 +114,7 @@ header nav ul li a
 #main-image
 {
     height: 580px;
-    background: url(images/original.jpg) center;
+    background: url(../images/original.jpg) center;
 }
 
 #main-image h2
@@ -176,18 +176,18 @@ header nav ul li a
 
 #step-1
 {
-   background: url(images/07eb6d6d-7d72-4767-a532-43cf8091e919.png) no-repeat top center;
+   background: url(../images/07eb6d6d-7d72-4767-a532-43cf8091e919.png) no-repeat top center;
 }
 
 #step-2
 {
-   background: url(images/41a92b9f-293d-49bb-9e26-c180f5839c80.png) no-repeat top center; 
+   background: url(../images/41a92b9f-293d-49bb-9e26-c180f5839c80.png) no-repeat top center; 
     
 }
 
 #step-3
 {
-   background: url(images/ce4f30aa-20a1-4639-af42-0cbeecc6224d.png) no-repeat top center; 
+   background: url(../images/ce4f30aa-20a1-4639-af42-0cbeecc6224d.png) no-repeat top center; 
 }
 
 /* POSSIBILITIES*/
