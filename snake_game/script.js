@@ -36,6 +36,7 @@ window.onload = function() {
         if (snakee.checkCollision()){
             /*game over*/
             Gameover();
+
         }else {
             if (snakee.isEatingApple(applee)){
                 /*le serpant a mange la pomme*/
@@ -45,6 +46,7 @@ window.onload = function() {
                     applee.setNewPosition();
 
                 }while (applee.isOnSnake(snakee))
+                delay = delay - 10;
             }
             /*pourquoi quand j ai utilise "else" il n a marche pas ???*/
                 ctx.clearRect(0, 0, canvasWidth, canvasHeight);
@@ -52,8 +54,6 @@ window.onload = function() {
                 snakee.draw();
                 applee.draw();
                 timeout=setTimeout(RefreshCanvas, delay);
-
-
         }
     }
     function Gameover() {
@@ -75,6 +75,7 @@ window.onload = function() {
         ctx.restore();
     }
     function Restart() {
+        delay=100;
         snakee = new snake([[6, 4], [5, 4], [4, 4],[3,4],[2,4]], "down");
         applee = new Apple([10,10]);
         score=0;
@@ -99,8 +100,8 @@ window.onload = function() {
         ctx.fillRect(x, y, blocksize, blocksize);
     }
 
-
     function snake(body, direction) {
+        /* on fait this. pour le var etre public nrmlmnt*/
         this.body = body;
         this.direction = direction;
         this.ateApple = false;
